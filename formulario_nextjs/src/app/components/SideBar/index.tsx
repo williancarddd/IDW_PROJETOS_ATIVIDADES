@@ -2,7 +2,7 @@ import Link from "next/link";
 import FormIm  from  "../../../../public/channels4_profile.jpg";
 import Image from "next/image";
 import  {AiOutlineForm}  from "react-icons/ai";
-
+import  {BiPurchaseTag}  from "react-icons/bi";
 
 function Sidebar(): JSX.Element {
  
@@ -21,6 +21,15 @@ function Sidebar(): JSX.Element {
             >
                 {<AiOutlineForm size={24}/>}
                 <p className={`font-sans font-bold uppercase text-[8px]`} >Home</p>
+            </Link>
+            </li>
+            <li >
+            <Link  className="flex flex-col justify-center items-center p-2 text-center font-normal rounded-lg hover:text-goat-purple-800 w-[5rem] gap-[8px] text-goat-gray-70" 
+            href='/product'
+            target="_self"
+            >
+                {<BiPurchaseTag size={24}/>}
+                <p className={`font-sans font-bold uppercase text-[8px]`} >Purchase</p>
             </Link>
             </li>
           </ul>
